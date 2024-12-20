@@ -17,6 +17,13 @@ body {
     display: flex;
 }
 
+.website-img p {
+    font-size: x-large;
+    font-weight: 600;
+    color: #91AC8E;
+    margin: 0;
+}
+
 .main-container {
     display: flex;
 }
@@ -90,6 +97,7 @@ body {
 .manage-box > div > a {
     color: black;
     text-decoration: none;
+    font-size: small;
 }
 
 .right-container {
@@ -103,8 +111,8 @@ body {
     background-color: #66785F;
     display: flex;
     align-items: center;
-    margin-bottom: 20px;
-    height: 40px;
+    /* margin-bottom: 20px; */
+    height: 30px;
 }
 
 .top-menu {
@@ -114,7 +122,9 @@ body {
 .top-menu > p {
     color: white;
     font-weight: 600;
-    text-align: center;    
+    font-size: small;
+    text-align: center;   
+    margin: 0;
 }
 
 .top-menu > p:hover {
@@ -122,8 +132,9 @@ body {
 }
 
 .root-container {
-    border: 1px solid blue;
+    /* border: 1px solid blue; */
     /* position: absolute;
     left: 300px;
     top: 180px; */
+    /* background-color: #8380221c; */
 }
