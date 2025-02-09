@@ -1,0 +1,164 @@
+
+.registed-book-list-container{
+    border: 1px solid black;
+    width: 1000px;
+    padding-top: 30px;
+}
+
+.registed-book-list-container p {
+    margin: 0;
+}
+
+
+/* 도서등록btn */
+.book-regist {
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+    width: 85%;
+    position: relative;
+    margin-bottom: 10px;
+    padding-bottom: 10px;
+    border-bottom: 1px solid #666;
+}
+
+.list-cnt {
+    display: flex;
+    align-items: center;
+    font-size: small;
+    margin-left: 5px;
+}
+
+.book-regist > button {
+    /* font-size: small;
+    border: 1px solid #666;
+    color: #666; */
+    background-color: white;
+    border: none;
+    color: #66785F;
+    font-size: large;
+    font-weight: 600;
+}
+
+.regist-way-container {
+    position: absolute;
+    top: 90%;
+    left: 100%;
+    transform: translateY(-50%);
+    padding: 10px;
+    z-index: 10;
+    width: 150px; /* 드롭다운의 넓이를 조정 */
+    display: none; 
+}
+
+.regist-way-box {
+    padding: 10px;
+    font-size: small;
+    height: 65px;
+    background-color: white;
+    border: 1px solid #ddd;
+    box-shadow: 0 2px 3px rgba(0, 0, 0, 0.2);
+    display: flex;
+    justify-content: space-around;
+    flex-direction: column;
+}
+
+.regist-way-box a {
+    text-decoration: none;
+    color: #666;
+}
+
+.regist-way-box a:hover {
+    font-size: medium;
+    font-weight: bold;
+    color: #66785F;
+}
+
+/* hover 시 메뉴 표시 */
+.book-regist:hover .regist-way-container {
+    display: block;
+}
+
+
+/* 도서목록 */
+.book-list-container {
+    width: 85%;
+    padding: 20px 10px;
+    display: flex;
+    border-bottom: 1px solid #ddd;
+}
+
+.list-no {
+    width: 5%;
+    /* border: 1px solid black; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.book-img {
+    width: 13%;
+    /* border: 1px solid black; */
+}
+
+.book-img img{
+    width: 100%;
+}
+
+.book-info {
+    width: 70%;
+    /* border: 1px solid black; */
+    padding: 5px 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.book-btn {
+    width: 12%;
+    /* border: 1px solid black; */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-size: small;
+}
+
+/* book-info */
+.info-title {
+    font-size: large;
+    margin-bottom: 5px;
+}
+
+.info-from {
+    font-size: small;
+    color: #999;
+    display: flex;
+    gap: 10px;
+}
+
+.book-count {
+    display: flex;
+    gap: 10px;
+}
+
+.book-count > div {
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    width: 12%;
+    padding: 5px 0;
+    font-size: small;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.book-btn > button {
+    all: unset;
+    font-size: small;
+}
+
+.book-btn > button:nth-child(2) {
+    color: rgb(212, 34, 34);
+}

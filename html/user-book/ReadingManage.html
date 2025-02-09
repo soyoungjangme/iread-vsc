@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/css/user-book/ReadingManage.css">
+    <title>독서관리</title>
+</head>
+<body>
+    <div class="reading-manage-container">
+        <div class="manage-top">> 나의 n번째 독서기록</div>
+        <div class="reading-info">
+            <div class="reading reading-what">
+                <p>어떤 책을 기록하시겠습니까?</p>
+                <div class="book-search">
+                    <button>도서검색</button>
+                    <input type="text" placeholder="도서명" />
+                </div>
+            </div>
+            <div class="reading reading-start-date">
+                <p>독서시작일</p>
+                <p>2025년 2월 1일</p>
+            </div>
+            <div class="reading-count">
+                <p>다시 읽은 책입니다.</p>
+            </div>
+            <button type="button" class="start-reading">시작하기</button>
+        </div>
+        <div class="start-reading-menu">
+            <div class="menu-group active">
+                <p>챕터별 기록</p>
+            </div>
+            <div class="menu-group ">
+                <p>페이지별 기록</p>
+            </div>
+            <div class="menu-group">
+                <p>독서록</p>
+            </div>
+        </div>
+        <!-- 챕터별 기록 -->
+        <div class="per-chapter-container">
+        <div class="per-chapter-group">
+            <p>Chapter1</p>
+            <input type="text" placeholder="소제목" />
+            <textarea placeholder="내용입력"></textarea>
+        </div>
+        <div class="per-chapter-group">
+            <p>Chapter2</p>
+            <input type="text" placeholder="소제목" />
+            <textarea placeholder="내용입력"></textarea>
+        </div>
+        </div>
+    </div>
+</body>
+</html>

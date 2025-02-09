@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/css/admin-book/RegistWriteBook.css">
+    <title>직접도서등록</title>
+</head>
+<body>
+    <div class="write-book-container">
+        <div class="top-title">
+            <p>> 직접등록</p>
+        </div>
+        <div class="form-container">
+            <div class="form left-box">
+                <div class="input-group">
+                    <p>도서명</p>
+                    <input type="text" placeholder="도서명 입력"/>
+                </div>
+                <div class="input-group">
+                    <p>출판사</p>
+                    <input type="text" placeholder="출판사 입력"/>
+                </div>
+                <div class="input-group">
+                    <p>ISBN</p>
+                    <input type="text" placeholder="isbn 입력"/>
+                </div>
+                <div class="img-group">
+                    <p>표지</p>
+                    <div class="img-regist">
+                        <input type="file" accept="image/*"/>
+                        <div class="img-box">
+                            <img src="/img/null-img.png" alt="이미지"/>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="form right-box">
+                <div class="input-group">
+                    <p>저자</p>
+                    <input type="text" placeholder="저자 입력"/>
+                </div>
+                <div class="input-group">
+                    <p>출간일</p>
+                    <input type="text" placeholder="출간일 입력"/>
+                </div>
+                <div class="input-group">
+                    <p>장르</p>
+                    <select>
+                        <option disabled selected>장르</option>
+                        <option>장르2</option>
+                        <option>장르3</option>
+                    </select>
+                </div>
+                <div class="input-group descript">
+                    <p>설명</p>
+                    <textarea placeholder="설명을 입력해주세요."></textarea>
+                </div>
+            </div>
+        </div>
+        <div class="regist-btn">
+            <button type="button">등록하기</button>
+        </div>
+    </div>
+</body>
+</html>

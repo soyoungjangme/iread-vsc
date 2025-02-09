@@ -1,0 +1,137 @@
+
+.registed-book-list-container{
+    border: 1px solid black;
+    width: 1000px;
+    padding-top: 30px;
+}
+
+.registed-book-list-container p {
+    margin: 0;
+}
+
+
+/* 장르 텍스트 */
+.view-genre {
+    font-size: large;
+    font-weight: bold;
+    align-items: baseline;
+    width: 85%;
+    margin-bottom: 10px;
+    padding-bottom: 10px;
+    border-bottom: 1px solid #666;
+    color: #66785F;
+}
+
+/* 도서목록 */
+.book-list-container {
+    width: 83%;
+    padding: 20px 10px;
+    display: flex;
+    border-bottom: 1px solid #ddd;
+}
+
+.list-no {
+    width: 5%;
+    /* border: 1px solid black; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.book-img {
+    width: 13%;
+    /* border: 1px solid black; */
+}
+
+.book-img img{
+    width: 100%;
+}
+
+.book-info {
+    width: 70%;
+    /* border: 1px solid black; */
+    padding: 5px 10px;
+}
+
+.book-btn {
+    width: 12%;
+    /* border: 1px solid black; */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-size: small;
+    gap: 5px;
+}
+
+/* book-info */
+.info-title {
+    font-size: large;
+    margin-bottom: 5px;
+}
+
+.info-from,
+.review-cnt {
+    font-size: small;
+    color: #999;
+    display: flex;
+    gap: 10px;
+    margin-bottom: 5px;
+}
+
+/* 버튼 */
+.btns {
+    width: 80%;
+}
+
+.btns > button,
+.write-review {
+    font-size: small;
+    padding: 5px;
+    border-radius: 7px;
+    width: 100%;
+    text-align: center;
+    cursor: pointer;
+}
+
+.like-text {
+    background-color: #F9C4C2;
+    border: 1px solid #F9C4C2;
+}
+
+.like-icon {
+    display: none;
+    border: 1px solid #fa8581;
+    background-color: #fa8581;
+}
+
+.reading-text {
+    background-color: #B2C9AD;
+    border: 1px solid #B2C9AD;
+}
+
+.reading-icon {
+    display: none;
+    background-color: #819e7b;
+    border: 1px solid #819e7b;
+}
+
+.btns i {
+    color: white;
+}
+
+.like-btn:hover .like-text,
+.reading-btn:hover .reading-text{
+    display: none;
+}
+
+.like-btn:hover .like-icon,
+.reading-btn:hover .reading-icon {
+    display: block;
+}
+
+.write-review {
+    background-color: white;
+    border: 1px solid #999;
+    width: 80%;
+}
