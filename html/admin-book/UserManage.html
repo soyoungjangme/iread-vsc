@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/css/admin-book/UserManage.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css" rel="stylesheet">
+    <title>회원관리</title>
+</head>
+<body>
+    <div class="user-manage-container">
+        <div class="user-manage-top">
+            <p>회원관리</p>
+            <p>누적회원수 239명</p>
+        </div>
+
+        <div class="user-search-part">
+            <div class="user-state-filter">
+                <p class="disabled-user-filter">비활성화</p>
+                <p class="activated-user-filter">활성화</p>
+                <i class="bi bi-arrow-repeat"></i>
+            </div>
+            <div class="user-name-filter">
+                <input type="text" placeholder="회원명, 닉네임" />
+            </div>
+        </div>
+
+        <div class="user-info-table">
+            <div class="user-info-title">
+                <span>no</span>
+                <span>닉네임</span>
+                <span>회원명</span>
+                <span>생년월일</span>
+                <span>북노트</span>
+                <span>리뷰</span>
+                <span>가입일</span>
+                <span>활동상태</span>
+            </div>
+            <div class="user-info-content-box">
+                <div class="user-info-content">
+                    <span>1</span>
+                    <span>소앵</span>
+                    <span>장소영</span>
+                    <span>2000. 11. 20</span>
+                    <span>30개</span>
+                    <span>24개</span>
+                    <span>2024. 12. 2</span>
+                    <div class="user-activation-state">
+                        <p class="activation-state">비활성화</p>
+                        <p class="activation-state activated-user">활성화</p>
+                    </div>
+                </div>
+                <div class="user-info-content">
+                    <span>2</span>
+                    <span>소앵ㅇㄴㅍㄴㅇㅍㄴㅇㅍㄴㅇㅍㄴㅇㅍㄴ</span>
+                    <span>장소영</span>
+                    <span>2000. 11. 20</span>
+                    <span>30개</span>
+                    <span>24개</span>
+                    <span>2024. 12. 2</span>
+                    <div class="user-activation-state">
+                        <p class="activation-state disabled-user">비활성화</p>
+                        <p class="activation-state">활성화</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

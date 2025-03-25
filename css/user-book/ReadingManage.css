@@ -47,21 +47,36 @@ p {margin:0;}
     border-bottom: 1px solid #666;
 }
 
-.reading-count {
+/* .reading-count {
     color: #949494;
     font-weight: bold;
     font-size: small;
+} */
+
+.reading-btn-group {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 10px;
 }
 
 .start-reading {
     all: unset;
-    float: right;
     color: #66785F;
     padding: 5px 10px;
     font-size: small;
     font-weight: bold;
     cursor: pointer;
-    margin-top: 10px;
+}
+
+.cancel-reading {
+    all: unset;
+    color: #666;
+    font-size: small;
+    cursor: pointer;
+}
+
+.cancel-reading:hover {
+    border-bottom: 1px solid #666;
 }
 
 .start-reading:hover {
@@ -110,11 +125,31 @@ p {margin:0;}
     font-weight: bold;
 }
 
-.per-chapter-group input {
+/*소제목*/
+.ch-input-group {
+    display: flex;
+    justify-content: space-between;
+}
+
+.ch-input-group input {
     border: none;
     border-bottom: 1px solid #bbbbbb;
     padding: 5px;
-    width: 30%;
+    width: 40%;
+}
+
+.ch-input-group input:focus {
+    outline: none;
+}
+
+/*삭제icon*/
+.bi-dash {
+    color: #bbbbbb;
+    cursor: pointer;
+}
+
+.bi-dash:hover {
+    color: black;
 }
 
 .per-chapter-group textarea {
@@ -122,4 +157,98 @@ p {margin:0;}
     height: 100px;
     padding: 5px;
     border-color: #bbbbbb;
+}
+/* //////////////////////////////////////////// */
+/* 페이지별 기록 */
+.per-page-container {
+    margin: 50px 0;
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+}
+
+.per-page-group {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.page-input-group {
+    display: flex;
+    justify-content: space-between;
+}
+
+.first-page {
+    color:#66785F;
+    font-weight: bold;
+}
+
+.last-page {
+    width: 40px;
+    border: 1px solid #bbbbbb;
+    border-radius: 3px;
+    padding: 3px;
+    text-align: center;
+}
+
+.last-page:focus {
+    outline: none;
+}
+
+
+/*삭제icon*/
+.bi-dash {
+    color: #bbbbbb;
+    cursor: pointer;
+}
+
+.bi-dash:hover {
+    color: black;
+}
+
+.per-page-group textarea {
+    resize: none;
+    height: 100px;
+    padding: 5px;
+    border-color: #bbbbbb;
+}
+
+/*추가버튼*/
+.bi-plus-square{
+    text-align: right;
+    color: #bbbbbb;
+    cursor: pointer;
+}
+
+/*버튼*/
+.page-btn-box {
+    display: flex;
+    justify-content: space-between;
+}
+
+/*목록버튼*/
+.list-btn {
+    background-color: white;
+    border: none;
+    cursor: pointer;
+    color: #999;
+    padding: 3px 10px;
+}
+
+.list-btn:hover {
+    border-bottom: 1px solid #999;
+}
+
+/*저장버튼*/
+.store-btn {
+    background-color: #66785f;
+    border: none;
+    border-radius: 5px;
+    padding: 3px 10px;
+    color:white;
+    cursor: pointer;
+}
+
+.store-btn:hover {
+    background-color: #666;
 }

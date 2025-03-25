@@ -1,0 +1,116 @@
+p {margin:0;}
+
+.my-review-top {
+    padding-bottom: 10px;
+    border-bottom: 1px solid #999;
+    font-weight: bold;
+    color: #66785f;
+    font-size: large;
+}
+
+.my-review-box {
+    padding: 20px 10px;
+    border-bottom: 1px solid #ddd;
+}
+
+.mr-top-group {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 10px;
+}
+
+.mr-top-group > p {
+    font-size: small;
+    color: #999;
+}
+
+.my-review-box > p {
+    font-weight: bold;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+.mr-btn-group {
+    display: flex;
+    font-size: small;
+    gap: 10px;
+}
+
+.mr-mod-btn {
+    color: #333;
+    cursor: pointer;
+}
+
+.mr-del-btn {
+    color: rgb(212, 34, 34);
+    cursor: pointer;
+}
+
+.mr-content-group {
+    font-size: small;
+}
+
+.mr-short {
+    margin-bottom: 7px;
+    color: #333;
+    border: none;
+}
+
+.mr-short:focus {
+    outline: none;
+}
+
+.mr-text-group {
+    display: flex;
+    justify-content: space-between;
+}
+
+.bi-chevron-down {
+    display: flex;
+    align-items: end;
+}
+
+.mr-text {
+    display: -webkit-box;
+    -webkit-line-clamp: 3; /*최대 3줄*/
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    line-height: 1.2em; /*줄간격*/
+    margin-bottom: 5px;
+    color: #999;
+    border:none;
+}
+
+.mr-text:focus {
+    outline: none;
+}
+
+.mr-img-box {
+    display: flex;
+    gap: 10px;
+}
+
+.mr-img {
+    position: relative;
+    display: inline-block;
+}
+
+.mr-img > img {
+    height: 100px;
+}
+
+/* 이미지삭제버튼 */
+.mr-img button {
+    position: absolute;
+    top: 1px;
+    right: 1px;
+    background: #66666642;
+    color: #333;
+    border: none;
+    /* border-radius: 50%; */
+    cursor: pointer;
+    width: 18px;
+    height: 18px;
+    font-size: x-small;
+    text-align: center;
+}

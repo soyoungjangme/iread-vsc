@@ -38,16 +38,16 @@
         </div>
         <div class="book-publish-info">
             <div class="publish-group">
+                <p>출판사</p>
+                <p>밝은세상</p>
+            </div>
+            <div class="publish-group">
                 <p>발행일</p>
                 <p>2023년 10월 1일</p>
             </div>
             <div class="publish-group">
                 <p>ISBN 13</p>
                 <p>1234567890123</p>
-            </div>
-            <div class="publish-group">
-                <p>ISBN 10</p>
-                <p>1234567890</p>
             </div>
         </div>
         <div class="book-detail-menu">
@@ -59,21 +59,67 @@
             </div>
         </div>
         <div class="book-detail-content">
+            <div class="review-write-box">
+                <!-- <p>리뷰작성</p> -->
+                <div class="review-write">
+                    <div class="book-img-group">
+                        <!-- <p>사진 기록 남기기</p> -->
+                        <label for="fileInput" class="custom-file-label">이미지 업로드</label>
+                        <input type="file" id="fileInput" class="file-input" accept="image/*">
+                        
+                        <div class="book-review-img">
+                            <div class="image-preview">
+                                <img src="/img/test-img.jpg"/>
+                                <button>X</button>
+                            </div>
+                            <div class="image-preview">
+                                <img src="/img/test-img.jpg"/>
+                                <button>X</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="simple-review-group">
+                        <input placeholder="한줄평"
+                            id="reviewShort"
+                            class="simple-review"/>
+                        <span>0/20</span>
+                        <button type="button" class="review-regist-btn">등록</button>
+                    </div>
+                    <textarea placeholder="내용입력"></textarea>
+                </div>
+            </div>
+
             <div class="detail-review">
-                <p class="review-one">한줄평</p>
+                <div class="review-top-group">
+                    <p class="review-one">한줄평</p>
+                    <p class="review-report">신고</p>
+                </div>
                 <p class="review-real">부처의 가르침을 현대적인 언어로 풀어낸 책입니다. 깊고 철학적인 내용을 쉽게 이해할 수 있도록 설명하며, 삶에 대한 통찰과 깨달음을 제공합니다. 인간의 고통, 행복, 인생의 의미 등을 다룬 부처의 가르침은 독자들에게 마음의 평화와 지혜를 선사합니다. 불교에 대한 이해를 넓히고 싶은 독자에게 적합한 책입니다.</p>
-                <p class="review-writer">작성자 닉네임</p>
+                <div class="review-imgs">
+                    <img src="/img/test-img.jpg" />
+                    <img src="/img/test-img.jpg" />
+                    <img src="/img/test-img.jpg" />
+                </div>
+                <div class="review-bottom-group">
+                    <p class="review-writer">작성자 닉네임</p>
+                    <p class="review-reg-date">2024년 1월 13일</p>
+                </div>
             </div>
             <div class="detail-review">
                 <p class="review-one">한줄평</p>
                 <p class="review-real">부처의 가르침을 현대적인 언어로 풀어낸 책입니다. 깊고 철학적인 내용을 쉽게 이해할 수 있도록 설명하며, 삶에 대한 통찰과 깨달음을 제공합니다. 인간의 고통, 행복, 인생의 의미 등을 다룬 부처의 가르침은 독자들에게 마음의 평화와 지혜를 선사합니다. 불교에 대한 이해를 넓히고 싶은 독자에게 적합한 책입니다.</p>
-                <p class="review-writer">작성자 닉네임</p>
+                <div class="review-imgs">
+                    <img src="/img/test-img.jpg" />
+                    <img src="/img/test-img.jpg" />
+                    <img src="/img/test-img.jpg" />
+                </div>
+                <div class="review-bottom-group">
+                    <p class="review-writer">작성자 닉네임</p>
+                    <p class="review-reg-date">2024년 1월 13일</p>
+                </div>
             </div>
-            <div class="detail-review">
-                <p class="review-one">한줄평</p>
-                <p class="review-real">부처의 가르침을 현대적인 언어로 풀어낸 책입니다. 깊고 철학적인 내용을 쉽게 이해할 수 있도록 설명하며, 삶에 대한 통찰과 깨달음을 제공합니다. 인간의 고통, 행복, 인생의 의미 등을 다룬 부처의 가르침은 독자들에게 마음의 평화와 지혜를 선사합니다. 불교에 대한 이해를 넓히고 싶은 독자에게 적합한 책입니다.</p>
-                <p class="review-writer">작성자 닉네임</p>
-            </div>
+            <button type="button" class="list-btn">목록</button>
+
         </div>
     </div>
 </body>

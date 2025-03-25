@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/css/user-book/BookReview.css">
+    <title>review</title>
+</head>
+<body>
+    <div class="book-review-container">
+        <div class="book-review-group">
+            <p>어떤 책이었나요?</p> 
+            <div class="simple-input-group">
+                <input placeholder="한줄평"
+                    id="reviewShort"
+                    class="simple-review"/>
+                <span>0/20</span>
+            </div>
+            <textarea placeholder="내용입력"></textarea>
+        </div>
+        <div class="book-img-group">
+            <!-- <p>사진 기록 남기기</p> -->
+            <label for="fileInput" class="custom-file-label">이미지 업로드</label>
+            <input type="file" id="fileInput" class="file-input" accept="image/*">
+            
+            <div class="book-review-img">
+                <div key={index} class="image-preview">
+                    <img src="/img/test-img.jpg"/>
+                    <button>X</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

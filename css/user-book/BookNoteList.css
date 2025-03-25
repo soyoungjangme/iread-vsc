@@ -26,6 +26,13 @@ p {margin: 0;}
 }
 
 .book-status {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 20px;
+}
+
+.book-status > p {
     border: 1px solid #819e7b;
     border-radius: 3px;
     background-color: #819e7b;
@@ -36,10 +43,25 @@ p {margin: 0;}
     width: 30%;
 }
 
-.reading-done {
+.reading-done > p {
     border: 1px solid #cfcfcf;
     background-color: #cfcfcf;
     color: #666;
+}
+
+.del-book-note {
+    color: #666;
+    display: none;
+    cursor: pointer;
+    margin-right: 2px;
+}
+
+.del-book-note:hover {
+    color: rgb(212, 34, 34);
+}
+
+.my-book:hover .del-book-note {
+    display: block;
 }
 
 .book-title {
